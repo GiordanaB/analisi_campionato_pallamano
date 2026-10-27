@@ -28,27 +28,72 @@ Il database `campionato_pallamano` è composto da tre tabelle principali:
 
 Le tabelle sono collegate attraverso chiavi primarie e chiavi esterne, che permettono di associare i giocatori alle squadre e le partite alle squadre partecipanti.
 
+## Struttura del repository
+
+- `campionato_pallamano.sql`: esportazione SQL del database.
+- `01_classifica.sql`: classifica del campionato.
+- `02_statistiche_squadre.sql`: statistiche offensive e difensive.
+- `03_analisi_rose.sql`: dimensione delle rose.
+- `04_analisi_eta.sql`: analisi dell'età dei giocatori.
+- `05_analisi_ruoli.sql`: distribuzione dei ruoli.
+- `06_analisi_nazionalita.sql`: distribuzione delle nazionalità.
+- `07_riepilogo_campionato.sql`: riepilogo delle prestazioni.
+- `README.md`: documentazione del progetto.
+
+## Come utilizzare il progetto
+
+### Requisiti
+
+- MySQL.
+- phpMyAdmin, oppure un altro client compatibile con MySQL.
+
+### 1. Importare il database
+
+1. Aprire phpMyAdmin.
+2. Creare un database chiamato `campionato_pallamano`, se non esiste già.
+3. Selezionare il database.
+4. Aprire la scheda **Importa**.
+5. Selezionare il file `campionato_pallamano.sql`.
+6. Avviare l'importazione e verificare che le tabelle siano state create correttamente.
+
+Se il file SQL contiene già istruzioni per creare o selezionare il database, seguire le istruzioni presenti nell'esportazione ed evitare di creare strutture duplicate.
+
+### 2. Eseguire le query
+
+Dopo aver importato il database, aprire uno dei file `.sql` con un editor oppure copiarne il contenuto nella scheda **SQL** di phpMyAdmin.
+
+Eseguire le query una alla volta e verificare i risultati restituiti.
+
+Le sette query consentono di analizzare la classifica, le statistiche delle squadre, le rose, l'età dei giocatori, i ruoli, le nazionalità e le prestazioni complessive del campionato.
+
 ## Analisi SQL realizzate
 
 ### 1. Classifica del campionato
+
 Calcolo delle partite giocate, vittorie, pareggi, sconfitte, gol fatti, gol subiti e punti ottenuti da ciascuna squadra.
 
 ### 2. Statistiche offensive e difensive
+
 Calcolo dei gol segnati e subiti da ogni squadra e delle rispettive medie per partita.
 
 ### 3. Dimensione delle rose
+
 Conteggio dei giocatori appartenenti a ciascuna squadra e confronto tra le dimensioni delle rose.
 
 ### 4. Analisi dell'età
+
 Calcolo dell'età media approssimativa dei giocatori e individuazione degli anni di nascita più recente e più lontano per ciascuna rosa.
 
 ### 5. Distribuzione dei ruoli
+
 Conteggio dei giocatori per ruolo all'interno di ogni squadra.
 
 ### 6. Analisi delle nazionalità
+
 Conteggio dei giocatori per nazionalità e calcolo della percentuale sul totale.
 
 ### 7. Riepilogo delle prestazioni
+
 Confronto complessivo tra le squadre attraverso vittorie, pareggi, sconfitte, gol fatti e gol subiti.
 
 ## Principali risultati
@@ -67,6 +112,7 @@ Dalle analisi effettuate emergono alcuni risultati interessanti:
 - **MySQL** – gestione del database ed esecuzione delle query.
 - **phpMyAdmin** – consultazione delle tabelle ed esecuzione delle interrogazioni SQL.
 - **Visual Studio Code** – scrittura e organizzazione dei file SQL.
+- **GitHub** – archiviazione e condivisione del progetto.
 
 ## Competenze dimostrate
 
@@ -76,6 +122,7 @@ Dalle analisi effettuate emergono alcuni risultati interessanti:
 - Utilizzo di espressioni condizionali con `CASE`.
 - Calcolo di percentuali e indicatori statistici.
 - Interpretazione dei risultati e individuazione di informazioni rilevanti.
+- Documentazione e organizzazione di un progetto SQL.
 
 ## Note metodologiche
 
